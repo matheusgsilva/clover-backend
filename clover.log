@@ -1075,3 +1075,69 @@ Caused by: org.hibernate.QueryException: could not resolve property: user_id of:
 2020-06-28 12:49:41.179  INFO 6448 --- [http-nio-9897-exec-2] o.a.c.c.C.[.[localhost].[/clover]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-06-28 12:49:41.181  INFO 6448 --- [http-nio-9897-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-06-28 12:49:41.182  INFO 6448 --- [http-nio-9897-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2020-06-28 12:59:48.463  INFO 2772 --- [main] br.com.clover.CloverBackendApplication   : Starting CloverBackendApplication using Java 13.0.2 on LAPTOP-IBPDMFN2 with PID 2772 (C:\Users\mgds2\Desktop\eclipse-workspace\clover-backend\target\classes started by Matheus Graciano in C:\Users\mgds2\Desktop\eclipse-workspace\clover-backend)
+2020-06-28 12:59:48.482  INFO 2772 --- [main] br.com.clover.CloverBackendApplication   : The following profiles are active: dev
+2020-06-28 12:59:49.384  INFO 2772 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-28 12:59:49.447  INFO 2772 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+2020-06-28 12:59:50.053  INFO 2772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9897 (http)
+2020-06-28 12:59:50.061  INFO 2772 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-28 12:59:50.062  INFO 2772 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-28 12:59:50.307  INFO 2772 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-06-28 12:59:50.313  INFO 2772 --- [main] o.a.c.c.C.[.[localhost].[/clover]        : Initializing Spring embedded WebApplicationContext
+2020-06-28 12:59:50.313  INFO 2772 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1794 ms
+2020-06-28 12:59:50.657  INFO 2772 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-28 12:59:50.703  INFO 2772 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-06-28 12:59:50.807  INFO 2772 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-28 12:59:50.895  INFO 2772 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-28 12:59:51.035  INFO 2772 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-28 12:59:51.059  INFO 2772 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-28 12:59:51.708  INFO 2772 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-28 12:59:51.716  INFO 2772 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-28 12:59:51.808  WARN 2772 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-28 12:59:52.437  INFO 2772 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5cef5fc9, org.springframework.security.web.context.SecurityContextPersistenceFilter@75aeec0a, org.springframework.security.web.header.HeaderWriterFilter@42d96745, org.springframework.security.web.authentication.logout.LogoutFilter@17d83fe4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79e28671, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e574f9c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b867869, org.springframework.security.web.session.SessionManagementFilter@71f042b1, org.springframework.security.web.access.ExceptionTranslationFilter@4cddc3d9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@309b8144]
+2020-06-28 12:59:52.485  INFO 2772 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-28 12:59:52.499  INFO 2772 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2020-06-28 12:59:52.507  INFO 2772 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'threadPoolTaskExecutor'
+2020-06-28 12:59:53.300  INFO 2772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9897 (http) with context path '/clover'
+2020-06-28 12:59:53.308  INFO 2772 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-06-28 12:59:53.310  INFO 2772 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-06-28 12:59:53.341  INFO 2772 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-06-28 12:59:53.435  INFO 2772 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-06-28 12:59:53.861  INFO 2772 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-06-28 12:59:53.869  INFO 2772 --- [main] br.com.clover.CloverBackendApplication   : Started CloverBackendApplication in 5.722 seconds (JVM running for 7.942)
+2020-06-28 13:00:11.611  INFO 2772 --- [http-nio-9897-exec-2] o.a.c.c.C.[.[localhost].[/clover]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-28 13:00:11.613  INFO 2772 --- [http-nio-9897-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-28 13:00:11.615  INFO 2772 --- [http-nio-9897-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2020-06-28 13:01:23.034  INFO 11208 --- [main] br.com.clover.CloverBackendApplication   : Starting CloverBackendApplication using Java 13.0.2 on LAPTOP-IBPDMFN2 with PID 11208 (C:\Users\mgds2\Desktop\eclipse-workspace\clover-backend\target\classes started by Matheus Graciano in C:\Users\mgds2\Desktop\eclipse-workspace\clover-backend)
+2020-06-28 13:01:23.037  INFO 11208 --- [main] br.com.clover.CloverBackendApplication   : The following profiles are active: dev
+2020-06-28 13:01:23.966  INFO 11208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-28 13:01:24.028  INFO 11208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+2020-06-28 13:01:24.552  INFO 11208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9897 (http)
+2020-06-28 13:01:24.568  INFO 11208 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-28 13:01:24.568  INFO 11208 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-28 13:01:24.877  INFO 11208 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-06-28 13:01:24.884  INFO 11208 --- [main] o.a.c.c.C.[.[localhost].[/clover]        : Initializing Spring embedded WebApplicationContext
+2020-06-28 13:01:24.885  INFO 11208 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1809 ms
+2020-06-28 13:01:25.281  INFO 11208 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-28 13:01:25.330  INFO 11208 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-06-28 13:01:25.460  INFO 11208 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-28 13:01:25.556  INFO 11208 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-28 13:01:25.715  INFO 11208 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-28 13:01:25.735  INFO 11208 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-28 13:01:26.441  INFO 11208 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-28 13:01:26.449  INFO 11208 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-28 13:01:26.554  WARN 11208 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-28 13:01:27.137  INFO 11208 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c59dfc7, org.springframework.security.web.context.SecurityContextPersistenceFilter@703947bd, org.springframework.security.web.header.HeaderWriterFilter@2dbc66f0, org.springframework.security.web.authentication.logout.LogoutFilter@344acc03, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@46bff388, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@27ea552d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40ed4674, org.springframework.security.web.session.SessionManagementFilter@cce672c, org.springframework.security.web.access.ExceptionTranslationFilter@3f67f5ff, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@10b7b5f0]
+2020-06-28 13:01:27.184  INFO 11208 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-28 13:01:27.200  INFO 11208 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2020-06-28 13:01:27.200  INFO 11208 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'threadPoolTaskExecutor'
+2020-06-28 13:01:27.968  INFO 11208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9897 (http) with context path '/clover'
+2020-06-28 13:01:27.969  INFO 11208 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-06-28 13:01:27.970  INFO 11208 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-06-28 13:01:28.001  INFO 11208 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-06-28 13:01:28.095  INFO 11208 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-06-28 13:01:28.480  INFO 11208 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-06-28 13:01:28.495  INFO 11208 --- [main] br.com.clover.CloverBackendApplication   : Started CloverBackendApplication in 5.787 seconds (JVM running for 6.767)
+2020-06-28 13:02:45.795  INFO 11208 --- [http-nio-9897-exec-2] o.a.c.c.C.[.[localhost].[/clover]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-28 13:02:45.798  INFO 11208 --- [http-nio-9897-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-28 13:02:45.800  INFO 11208 --- [http-nio-9897-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms

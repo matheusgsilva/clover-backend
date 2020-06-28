@@ -5,6 +5,7 @@ import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -41,9 +42,10 @@ public class UserController {
 			if (user != null) {
 				if (user.getActive().equals(ACTIVE.YES) && user.getAdmin().equals(ADMIN.YES)) {
 					if (!userService.exists(userRequest.getUsername())) {
-						User newUser = userService.save(new User(userRequest.getUsername(), userRequest.getName(),
-								userRequest.getEmail(), new Date(), userRequest.getPassword(),
-								ACTIVE.YES, userRequest.getAdmin()));
+						User newUser = userService
+								.save(new User(userRequest.getUsername(), userRequest.getName(), userRequest.getEmail(),
+										new Date(), BCrypt.hashpw(userRequest.getPassword(), BCrypt.gensalt()),
+										ACTIVE.YES, userRequest.getAdmin()));
 
 						return new ResponseEntity<ResponseAPI>(
 								new ResponseAPI(200, "OK", new UserResponse(newUser.getUsername(), newUser.getName(),
